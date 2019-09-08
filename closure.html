@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+  function outerFunc(){
+  	var J = "J is a local varible of outer function";
+  	console.log(J);
+
+  function innerFunc(){
+    var K = "K is a local variable of inner function";
+    console.log(K);
+    console.log(J);    //access the outer varible function in inner function that is closure
+    
+  }
+
+  innerFunc();
+
+  }
+
+outerFunc();
+
+
+
+</script>
+</body>
+</html>
